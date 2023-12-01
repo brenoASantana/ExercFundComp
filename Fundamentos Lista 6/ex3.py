@@ -1,12 +1,13 @@
-numPar = [0] * 10
-i = 0
+numImpar = [0] * 10
+quant = 0
 
-while len(numPar) < 10:
-    n = int(input("Informe um valor:\n"))
+## Como que vou declarar um vetor e inserir nele depois???
+
+while quant < 10:
+    n = int(input("Informe um valor: "))
 
     if n % 2 != 0:
-        numPar[i] = n
+        numImpar.insert(quant,n)
+        quant += 1
 
-    i += 1
-
-print(numPar)
+print(numImpar)

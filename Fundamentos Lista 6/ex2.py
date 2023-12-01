@@ -1,11 +1,8 @@
-vetor = [0] * 10
-vetorAux = [0] * 10
+vetor = []
 
 for i in range(10):
-    n = int(input("Informe um valor:\n"))
-    vetor[i] = n
+    n = int(input("Informe um valor: "))
+    vetor.append(n)
 
-for i in range(len(vetor)):
-    vetor[i]
-
-print(vetor)
+for i in range(len(vetor)-1, -1, -1):
+    print(vetor[i])
