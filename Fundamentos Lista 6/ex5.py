@@ -8,9 +8,9 @@ for i in range(len(vet1)):
 for i in range(len(vet2)):
     vet2[i] = int(input("Informe um valor inteiro para o 2º vetor: "))
 
-
-for i in range(10):
-    if vet1[i] == vet2[i]:
-        vetInter.append(vet1[i])
+for i in range(len(vet1)):
+    for j in range(len(vet2)):
+        if vet1[i] == vet2[j]:
+            vetInter.append(vet2[j])
 
 print(vetInter)

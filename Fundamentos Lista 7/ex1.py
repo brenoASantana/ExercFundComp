@@ -1,13 +1,20 @@
-vetpos = []
-vetneg = []
+mat = [
+    [0,0,0],
+    [0,0,0],
+    [0,0,0]
+    ]
 
-for i in range(10):
-    n = int(input("Informe um valor:\n"))
+soma = 0
 
-    if n > 0:
-        vetpos += [n]
-    if n < 0:
-        vetneg += [n]
+for lin in range(len(mat)):
+    for col in range(len(mat[lin])):
+        nCol = int(input("Informe um valor: "))
+        print(mat)
+        mat[col] = nCol
+        soma += nCol
+    nLin = int(input("Informe um valor: "))
+    print(mat)
+    mat[lin] = nLin
+    soma += nLin
 
-print(f"Vetor Positivo: {vetpos}")
-print(f"Vetor Negativo: {vetneg}")
+print(f"A soma dos elementos da matriz é: {soma}")
