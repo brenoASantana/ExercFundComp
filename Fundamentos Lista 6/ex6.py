@@ -1,14 +1,17 @@
 vet = []
-maiorValor = menorValor = menorPosicao = maiorPosicao = 0.0
+maiorValor = menorValor = 0.0
+menorPosicao = maiorPosicao = 0
 
 while len(vet) < 10:
     vet.append(float(input("Informe um valor: ")))
 
 for i in range(len(vet)):
-    if vet[i] > maiorValor:
+    if vet[i] >= maiorValor:
+        maiorPosicao = i + 1
         maiorValor = vet[i]
 
-    if vet[i] < menorValor:
+    if vet[i] <= menorValor:
+        menorPosicao = i + 1
         menorValor = vet[i]
 
 print(f"A posição do maior valor é: {maiorPosicao}")
