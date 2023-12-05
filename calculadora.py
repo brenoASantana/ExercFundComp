@@ -17,7 +17,7 @@ if opcao >= 1 and opcao <= 5:
             if num2 != 0:
                 print(f"O resultado é: {num1/num2}")
             else:
-                print("ERRO: Divisor igual a 0! Cancelando operação...")
+                print("ERRO: Divisor igual a 0. Cancelando operação...")
         case 5:
             print("Operação Finalizada")
 else:
