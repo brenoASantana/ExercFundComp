@@ -1,5 +1,8 @@
 import math
 
+## Breno, a forma como foi feita a validação, não permite a inserção de um novo valor caso o lado inválido seja o segundo ou outro depois dele.
+## Além disso, a área total deveria ser exibida, não a área de cada polígono separadamente.
+
 
 def areaRetangulo(x, y):
     return x * y
